@@ -14,6 +14,7 @@
                     <a href="${pageContext.request.contextPath}/show?id=${task.id}">
                         <c:out value="${task.id}" />
                     </a>
+                    ：<c:out value="${task.content}"></c:out>
                 </li>
             </c:forEach>
         </ul>
@@ -32,7 +33,7 @@
             </c:forEach>
         </div>
 
-        <p><a href="${pageContext.request.contextPath}/new">タスク管理</a></p>
+        <p><a href="${pageContext.request.contextPath}/new">新しいタスクの投稿</a></p>
 
     </c:param>
 </c:import>
